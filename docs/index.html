@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svatba Kateřina & Lukáš | 17.7.2027</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #b76e79;
+        }
+
+        header {
+            height: 100vh;
+            background: url('chairs.jfif') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .text-with-background {
+            background-color: rgba(135, 118, 90, 0.7);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f3f3f3;
+            font-size: 0.9rem;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Domů</a>
+    <a href="#info">Informace</a>
+    <a href="#harmonogram">Harmonogram</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<header id="home">
+    <div class="text-with-background">
+        <h1 class="">Kateřina & Lukáš</h1>
+        <p class="">17. července 2027</p>
+        <p class="">Těšíme se, že tento den oslavíme s Vámi ❤️</p>
+    </div>
+</header>
+
+<section id="info">
+    <h2>Základní informace</h2>
+    <div class="info-grid">
+        <div class="card">
+            <h3>Místo obřadu</h3>
+            <p>Zde doplňte místo konání svatby.</p>
+        </div>
+        <div class="card">
+            <h3>Čas</h3>
+            <p>Např. Obřad začíná ve 13:00.</p>
+        </div>
+        <div class="card">
+            <h3>Dress code</h3>
+            <p>Např. Elegantní / Letní formální.</p>
+        </div>
+    </div>
+</section>
+
+<section id="harmonogram">
+    <h2>Harmonogram dne</h2>
+    <div class="info-grid">
+        <div class="card">
+            <h3>Obřad</h3>
+            <p>13:00</p>
+        </div>
+        <div class="card">
+            <h3>Hostina</h3>
+            <p>15:00</p>
+        </div>
+        <div class="card">
+            <h3>Večerní zábava</h3>
+            <p>19:00</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Galerie</h2>
+    <div class="gallery">
+        <img src="shoes.jfif" alt="Ukázkový obrázek 1">
+        <img src="siluets.jfif" alt="Ukázkový obrázek 2">
+        <img src="shoes.jfif" alt="Ukázkový obrázek 3">
+    </div>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt & RSVP</h2>
+    <p style="text-align:center; max-width:600px; margin:auto;">
+        Prosíme potvrďte svou účast na e-mail: <strong>vas@email.cz</strong><br><br>
+        Těšíme se na Vás!
+    </p>
+</section>
+
+<footer>
+    Kateřina & Lukáš | 17.7.2027
+</footer>
+
+</body>
+</html>
